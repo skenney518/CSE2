@@ -27,9 +27,13 @@ public class Arithmetic {
     int nEnvelopes=1; // number of envelopes
     double envelopeCost$=3.25; // cost of envelopes
     double taxPercent=0.06; // PA tax rate
+
+// creates the variables
     double totalSockCost$, totalSockTax$, totalGlassCost$, totalGlassTax$; 
-    double totalEnvelopeCost$, totalEnvelopeTax$, totalCost$, totalTax$; // Creates the variables
+    double totalEnvelopeCost$, totalEnvelopeTax$, totalCost$, totalTax$; 
     double totalSockCostTax$, totalGlassCostTax$, totalEnvelopeCostTax$, Total$;
+   
+// computes the numerical values of the variables, by creating specific equations
     totalSockCost$=(nSocks*sockCost$);
     totalSockTax$=(totalSockCost$*taxPercent);
     totalSockCostTax$=(totalSockCost$+totalSockTax$);
@@ -42,11 +46,15 @@ public class Arithmetic {
     totalCost$=(totalSockCost$+totalGlassCost$+totalEnvelopeCost$);
     totalTax$=(totalCost$*taxPercent);
     Total$=(totalCost$+totalTax$);
+    
+// type cast the doubles into integers, to limit to two digits after decimal point
     totalSockCostTax$=(int)(totalSockCostTax$*100) / 100.0;
     totalGlassCostTax$=(int)(totalGlassCostTax$*100) / 100.0;
     totalEnvelopeCostTax$=(int)(totalEnvelopeCostTax$*100) / 100.0;
     totalCost$=(int)(totalCost$*100) / 100.0;
     Total$=(int)(Total$*100) / 100.0;
+    
+// print out the numerical values
     System.out.println("Total cost of the 3 pairs of socks is "+(totalSockCostTax$)+" dollars.");
     System.out.println("Total cost of the 6 drinking glasses is "+(totalGlassCostTax$)+" dollars.");
     System.out.println("Total cost of the 1 pack of envelops is "+(totalEnvelopeCostTax$)+" dollars.");
