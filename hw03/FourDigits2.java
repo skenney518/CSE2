@@ -17,7 +17,7 @@
 // import the scanner class
 import java.util.Scanner;
 //define a class
-public class FourDigits {
+public class FourDigits2 {
     //main method required for every Java program
     public static void main(String[] args) {
     
@@ -29,11 +29,10 @@ public class FourDigits {
     System.out.print("Enter a double and I display the four digits to the right of the decimal point: ");
     //necesary to accept user input
     double userDouble=myScanner.nextDouble();
-    int userExpanded=(int)(userDouble*10000);
-    int userDigits= userExpanded % 10000;
+    int userDigits=((int)(userDouble*10000.0)-((int)(userDouble)*10000));
     String formatted = String.format("%04d" , userDigits);
-    System.out.println("The four digits to the right of the decimal point are: " + formatted);
+    System.out.println("The four digits to the right of the decimal point are " + formatted);
     
-   
+    
     }
 }
