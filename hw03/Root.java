@@ -24,11 +24,6 @@ public class Root {
     
     // our variables
     double estimateOne;
-    double estimateTwo;
-    double estimateThree;
-    double estimateFour;
-    double estimateFive;
-    double estimateSix;
     double estimateCubed;
     
     //declare instance of scanner object
@@ -42,17 +37,17 @@ public class Root {
     
     //creates equations for estimate
     estimateOne=userDouble/ 3;
-    estimateTwo=(2*estimateOne*estimateOne*estimateOne+userDouble)/(3*estimateOne*estimateOne);
-    estimateThree=(2*estimateTwo*estimateTwo*estimateTwo+userDouble)/(3*estimateTwo*estimateTwo);
-    estimateFour=(2*estimateThree*estimateThree*estimateThree+userDouble)/(3*estimateThree*estimateThree);
-    estimateFive=(2*estimateFour*estimateFour*estimateFour+userDouble)/(3*estimateFour*estimateFour);
-    estimateSix=(2*estimateFive*estimateFive*estimateFive+userDouble)/(3*estimateFive*estimateFive);
-    estimateCubed=(estimateSix*estimateSix*estimateSix);
+    estimateOne=(2*estimateOne*estimateOne*estimateOne+userDouble)/(3*estimateOne*estimateOne);
+    estimateOne=(2*estimateOne*estimateOne*estimateOne+userDouble)/(3*estimateOne*estimateOne);
+    estimateOne=(2*estimateOne*estimateOne*estimateOne+userDouble)/(3*estimateOne*estimateOne);
+    estimateOne=(2*estimateOne*estimateOne*estimateOne+userDouble)/(3*estimateOne*estimateOne);
+    estimateOne=(2*estimateOne*estimateOne*estimateOne+userDouble)/(3*estimateOne*estimateOne);
+    estimateCubed=(estimateOne*estimateOne*estimateOne);
     
     //print out the estimate
-    System.out.println("The cube root is "+estimateSix+":");
+    System.out.println("The cube root is "+estimateOne);
     //print out the proof
-    System.out.println(+estimateSix+"*"+estimateSix+"*"+estimateSix+" = "+estimateCubed+".");
+    System.out.println(+estimateOne+"*"+estimateOne+"*"+estimateOne+" = "+estimateCubed+".");
     
     }
 }
