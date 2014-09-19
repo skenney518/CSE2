@@ -32,13 +32,14 @@ public class IncomeTax {
         //define variables
         int incomeNumber$=myScanner.nextInt();
 
-    
+    //if statement ensuring integer is possitve and not 0
     if(incomeNumber$<=0) {
         System.out.println("You did not enter a positive integer.");
         return;
         
     }
     
+    //following if statements are used to decide which tax rate the input falls under
     if(incomeNumber$<20) {
         double taxRate5$=5;
         double totalTax5$=(incomeNumber$*1000)*taxRate5$/100;
@@ -66,6 +67,7 @@ public class IncomeTax {
         totalTax14$=((int)totalTax14$*100)/100.0;
         System.out.println("The taxrate on $"+incomeNumber$+",000 is "+taxRate14$+"% and the tax is $"+totalTax14$);
     }
+    //program shuts off code is input is negative or 0
     }else{
         System.out.println("You did not enter a positive integer. Try again");
         return;
