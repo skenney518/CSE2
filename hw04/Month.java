@@ -72,6 +72,7 @@ public class Month {
     //else statement shuting off code, if user inputs a non-integer
     }else{
         System.out.println("You did not enter a positive integer, try again. ");
+        return;
     }
     }
 }
