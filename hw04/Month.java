@@ -33,7 +33,7 @@ public class Month {
         int Month=myScanner.nextInt();
     
     
-    //ensuring the user inputted a positive, non zero, int
+    //ensuring the user inputted a positive, non zero, int 
     if(Month<=0) {
         System.out.println("You did not enter a positive integer, try again.");
         return;
