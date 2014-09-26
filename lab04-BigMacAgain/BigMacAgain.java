@@ -37,7 +37,7 @@ public class BigMacAgain {
      
         //creates pricing equation
         cost$=(int)(nBigMacs*costPer$*100) / 100.0;
-        double totalFries$=cost$ + 2.15;
+        double totalFries$=(int)((cost$ + 2.15)*100) / 100.0;
         
         //if statement for ensuring input isn't negative or 0        
         if(nBigMacs>0){
