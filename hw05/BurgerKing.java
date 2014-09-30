@@ -10,6 +10,7 @@
 //
 //import scanner class
 import java.util.Scanner;
+//create a class
 public class BurgerKing {
     public static void main(String [] args) {
         
