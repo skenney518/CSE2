@@ -6,6 +6,10 @@
 //hw05
 //BoolaBoola
 //
+// prograam creates a randomized string of consisting of three (false/ true)'s and 2 (&& or ||)s
+// program than asks user for input 
+//      whether its true or false
+//      program then prints out whether user is correct or not
 //import scanner class
 import java.util.Scanner;
 //  define a class
