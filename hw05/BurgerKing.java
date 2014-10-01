@@ -151,7 +151,7 @@ public class BurgerKing {
                     return;
             }
         
-        //if f or F were chosen, prints out that they ordered fries
+        //if f or F were chosen, prints out that they ordered fries.
         case 'F':
         case 'f':
             System.out.println("You ordered Fries. ");
